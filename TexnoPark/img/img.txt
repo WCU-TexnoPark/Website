@@ -1,0 +1,2 @@
+This is a img path.
+TexnoPark/img/
