@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VanillaJS ScrollSpy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .navbar-start {
+        width: 300px;
+        overflow-y: scroll;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid #fff;
+      }
+      .navbar-brand > .navbar-item {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .navbar-menu .navbar-item {
+        font-size: 14px;
+        transition: background-color 0.26s, color 0.26s;
+      }
+      .navbar-menu .navbar-item.active {
+        background-color: #222;
+        color: red;
+      }
+      .page {
+        height: 100%;
+        padding: 80px 0;
+        width: 100%;
+      }
+      .page:nth-child(odd) {
+        background-color: #ddd;
+      }
+      .page:nth-child(even) {
+        background-color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar is-dark is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div id="navbar" class="navbar-menu navbar-scroll">
+          <div class="navbar-start">
+            <a href="#section1" class="navbar-item active">Section-1</a>
+            <a href="#section2" class="navbar-item">Section-2</a>
+            <a href="#section3" class="navbar-item">Section-3</a>
+            <a href="#section4" class="navbar-item">Section-4</a>
+            <a href="#section5" class="navbar-item">Section-5</a>
+            <a href="#section6" class="navbar-item">Section-6</a>
+            <a href="#section7" class="navbar-item">Section-7</a>
+            <a href="#section8" class="navbar-item">Section-8</a>
+            <a href="#section9" class="navbar-item">Section-9</a>
+            <a href="#section10" class="navbar-item">Section-10</a>
+            <a href="#section11" class="navbar-item">Section-11</a>
+            <a href="#section12" class="navbar-item">Section-12</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="section1" class="page">
+      <div class="container">
+        <h2 class="title">Section 1</h2>
+      </div>
+    </section>
+
+    <section id="section2" class="page">
+      <div class="container">
+        <h2 class="title">Section 2</h2>
+      </div>
+    </section>
+
+    <section id="section3" class="page">
+      <div class="container">
+        <h2 class="title">Section 3</h2>
+      </div>
+    </section>
+
+    <section id="section4" class="page">
+      <div class="container">
+        <h2 class="title">Section 4</h2>
+      </div>
+    </section>
+
+    <section id="section5" class="page">
+      <div class="container">
+        <h2 class="title">Section 5</h2>
+      </div>
+    </section>
+
+    <section id="section6" class="page">
+      <div class="container">
+        <h2 class="title">Section 6</h2>
+      </div>
+    </section>
+
+    <section id="section7" class="page">
+      <div class="container">
+        <h2 class="title">Section 7</h2>
+      </div>
+    </section>
+
+    <section id="section8" class="page">
+      <div class="container">
+        <h2 class="title">Section 8</h2>
+      </div>
+    </section>
+
+    <section id="section9" class="page">
+      <div class="container">
+        <h2 class="title">Section 9</h2>
+      </div>
+    </section>
+
+    <section id="section10" class="page">
+      <div class="container">
+        <h2 class="title">Section 10</h2>
+      </div>
+    </section>
+
+    <section id="section11" class="page">
+      <div class="container">
+        <h2 class="title">Section 11</h2>
+      </div>
+    </section>
+
+    <section id="section12" class="page">
+      <div class="container">
+        <h2 class="title">Section 12</h2>
+      </div>
+    </section>
+
+    <script src="vanillajs-scrollspy.min.js"></script>
+    <script>
+      const navbar = document.querySelector("#navbar");
+      const scrollspy = new VanillaScrollspy(navbar);
+      scrollspy.init();
+    </script>
+  </body>
+</html>
